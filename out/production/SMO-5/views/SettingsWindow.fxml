@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<AnchorPane prefHeight="720.0" prefWidth="1280.0" styleClass="scene" stylesheets="@../smo.css"
+            xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="controllers.SettingsController">
+    <children>
+        <HBox alignment="CENTER" prefHeight="600.0" prefWidth="1280.0">
+            <children>
+                <VBox alignment="CENTER_RIGHT" prefHeight="200.0" prefWidth="640.0">
+                    <children>
+                        <Label prefHeight="40.0" text="Количество источников:">
+                            <font>
+                                <Font size="18.0"/>
+                            </font>
+                        </Label>
+                        <Label prefHeight="40.0" text="Размер буфера:">
+                            <font>
+                                <Font size="18.0"/>
+                            </font>
+                        </Label>
+                        <Label prefHeight="40.0" text="Количество приборов:">
+                            <font>
+                                <Font size="18.0"/>
+                            </font>
+                        </Label>
+                        <Label prefHeight="40.0" text="Количество заявок:">
+                            <font>
+                                <Font size="18.0"/>
+                            </font>
+                        </Label>
+                        <Label prefHeight="40.0" text="Альфа:">
+                            <font>
+                                <Font size="18.0"/>
+                            </font>
+                        </Label>
+                        <Label prefHeight="40.0" text="Бета:">
+                            <font>
+                                <Font size="18.0"/>
+                            </font>
+                        </Label>
+                        <Label prefHeight="40.0" text="Лямбда:">
+                            <font>
+                                <Font size="18.0"/>
+                            </font>
+                        </Label>
+                    </children>
+                    <padding>
+                        <Insets right="15.0"/>
+                    </padding>
+                </VBox>
+                <VBox alignment="CENTER_LEFT" prefHeight="200.0" prefWidth="640.0" spacing="10.0">
+                    <children>
+                        <TextField fx:id="sourceCountField" maxWidth="300.0" prefHeight="30.0" prefWidth="300.0"
+                                   promptText="Enter int">
+                            <font>
+                                <Font size="14.0"/>
+                            </font>
+                        </TextField>
+                        <TextField fx:id="bufferSizeField" maxWidth="300.0" prefHeight="30.0" prefWidth="300.0"
+                                   promptText="Enter int">
+                            <font>
+                                <Font size="14.0"/>
+                            </font>
+                        </TextField>
+                        <TextField fx:id="deviceCountField" maxWidth="300.0" prefHeight="30.0" prefWidth="300.0"
+                                   promptText="Enter int">
+                            <font>
+                                <Font size="14.0"/>
+                            </font>
+                        </TextField>
+                        <TextField fx:id="requestsCountField" maxWidth="300.0" prefHeight="30.0" prefWidth="300.0"
+                                   promptText="Enter int">
+                            <font>
+                                <Font size="14.0"/>
+                            </font>
+                        </TextField>
+                        <TextField fx:id="alphaField" maxWidth="300.0" prefHeight="30.0" prefWidth="300.0"
+                                   promptText="Enter double">
+                            <font>
+                                <Font size="14.0"/>
+                            </font>
+                        </TextField>
+                        <TextField fx:id="betaField" maxWidth="300.0" prefHeight="30.0" prefWidth="300.0"
+                                   promptText="Enter double">
+                            <font>
+                                <Font size="14.0"/>
+                            </font>
+                        </TextField>
+                        <TextField fx:id="lambdaField" maxWidth="300.0" prefHeight="30.0" prefWidth="300.0"
+                                   promptText="Enter double">
+                            <font>
+                                <Font size="14.0"/>
+                            </font>
+                        </TextField>
+                    </children>
+                    <padding>
+                        <Insets left="15.0"/>
+                    </padding>
+                </VBox>
+            </children>
+        </HBox>
+        <HBox alignment="CENTER" layoutY="600.0" prefHeight="120.0" prefWidth="1280.0">
+            <children>
+                <Button fx:id="safeButton" mnemonicParsing="false" onAction="#onClickSafeButton" prefHeight="50.0"
+                        prefWidth="200.0" stylesheets="@../smo.css" text="Сохранить" textFill="WHITE">
+                    <font>
+                        <Font size="16.0"/>
+                    </font>
+                </Button>
+            </children>
+        </HBox>
+    </children>
+</AnchorPane>
